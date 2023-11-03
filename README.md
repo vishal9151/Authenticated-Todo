@@ -8,7 +8,6 @@ Competishun Task Todo is a simple task management application built with Vite, R
 - Add tasks: Create tasks with titles, due dates, and priority levels.
 - Prioritize tasks: Set priority levels for your tasks (low, medium, high).
 - Mark tasks as completed: Keep track of your progress by marking tasks as completed.
-- Archive tasks: Remove completed tasks from your active list.
 - Mobile-friendly: The application is designed to work seamlessly on both desktop and mobile devices.
 
 ## Getting Started
