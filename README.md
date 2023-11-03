@@ -1,8 +1,48 @@
-# React + Vite
+# Competishun Task Todo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Competishun Task Todo is a simple task management application built with Vite, React, and Tailwind CSS. It allows users to create, manage, prioritize, complete, and archive tasks.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- User authentication: Sign up and log in to manage your tasks.
+- Add tasks: Create tasks with titles, due dates, and priority levels.
+- Prioritize tasks: Set priority levels for your tasks (low, medium, high).
+- Mark tasks as completed: Keep track of your progress by marking tasks as completed.
+- Archive tasks: Remove completed tasks from your active list.
+- Mobile-friendly: The application is designed to work seamlessly on both desktop and mobile devices.
+
+## Getting Started
+
+These instructions will help you set up and run the Competishun Task Todo application on your local machine.
+
+### Prerequisites
+
+Before getting started, ensure that you have the following software installed on your computer:
+
+- Node.js and npm
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/vishal9151/Competishun-Task-Todo.git
+   cd Competishun-Task-Todo
+   npm install
+   npm run dev
+   
+The application should now be running at http://localhost:3000. Open your web browser and visit the URL to start using the Competishun Task Todo app.
+
+Built With
+Vite - Build tool
+React - JavaScript library for building user interfaces
+Tailwind CSS - CSS framework
+Author
+Vishal Mangla
+License
+  
+  This project is licensed under the MIT License - see the LICENSE.md file for details.
+  
+  Make sure to replace "Your Name" and "https://github.com/yourusername" with your name and GitHub profile link.
+  
+  Save this content in a file named `README.md` in the root of your GitHub repository. When you push the changes to your GitHub repository, this README will be displayed on the repository's homepage.
