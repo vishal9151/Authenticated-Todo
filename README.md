@@ -38,10 +38,6 @@ React - JavaScript library for building user interfaces
 Tailwind CSS - CSS framework
 Author
 Vishal Mangla
-License
-  
-  This project is licensed under the MIT License - see the LICENSE.md file for details.
-  
-  Make sure to replace "Your Name" and "https://github.com/yourusername" with your name and GitHub profile link.
-  
-  Save this content in a file named `README.md` in the root of your GitHub repository. When you push the changes to your GitHub repository, this README will be displayed on the repository's homepage.
+
+
+Vercel Link : https://competishuntask.vishalmangla.tech/login
