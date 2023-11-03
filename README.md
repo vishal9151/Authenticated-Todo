@@ -31,7 +31,7 @@ Before getting started, ensure that you have the following software installed on
    npm install
    npm run dev
    
-The application should now be running at http://localhost:3000. Open your web browser and visit the URL to start using the Competishun Task Todo app.
+The application should now be running at http://localhost:5173. Open your web browser and visit the URL to start using the Competishun Task Todo app.
 
 Built With
 Vite - Build tool
