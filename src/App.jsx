@@ -11,10 +11,10 @@ function App() {
       <Routes>
         <Route
           path="/"
-          element={authenticated ? <Home /> : <SignUp/>}
+          element={authenticated ? <Home /> : <Navigate to={"/signup"}/>}
         />
-        <Route path="/signup" element={<SignUp />} />
-        <Route path="/login" element={<Login />} />
+        <Route path="signup" element={<SignUp />} />
+        <Route path="login" element={<Login />} />
       </Routes>
     </Router>
   );
