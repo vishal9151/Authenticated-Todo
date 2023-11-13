@@ -58,6 +58,7 @@ const TodoProvider=function({children}){
                     setAuthenticated(true);
                     setUser(user);
                     setTodo(user.todo);
+                    setLogin(true);
                 }
             }
         }
@@ -66,6 +67,7 @@ const TodoProvider=function({children}){
     const handleLogout=()=>{
         localStorage.removeItem("Token");
         setAuthenticated(false);
+        setLogin(false);
         setUser({});
         setUserData([]);
     }
