@@ -19,8 +19,6 @@ const TodoProvider=function({children}){
             
         }
     },[])
-    const [login,setLogin]=useState(false);
-    const [userdata,setUserData]=useState([]);
     const [user,setUser]=useState({});
     const [todo,setTodo]=useState([]);
     const [authenticated,setAuthenticated]=useState(false);
@@ -36,7 +34,6 @@ const TodoProvider=function({children}){
         const user={username,encryptedPassword,todo:[]};
         userData.push(user);
         localStorage.setItem("userData",JSON.stringify(userData));
-        setLogin(true);
     }
     const handleLogin=({username,password})=>{
         console.log(username);
@@ -48,7 +45,6 @@ const TodoProvider=function({children}){
             if(user){
                 const decryptedPassword=CryptoJS.AES.decrypt(user.encryptedPassword,'secret_key').toString(CryptoJS.enc.Utf8);
                 if(decryptedPassword==password){
-                    setUserData(userData);
                     const token = CryptoJS.AES.encrypt(password, 'token_key').toString();
                     const Token={
                         token,
@@ -58,7 +54,6 @@ const TodoProvider=function({children}){
                     setAuthenticated(true);
                     setUser(user);
                     setTodo(user.todo);
-                    setLogin(true);
                 }
             }
         }
@@ -67,9 +62,7 @@ const TodoProvider=function({children}){
     const handleLogout=()=>{
         localStorage.removeItem("Token");
         setAuthenticated(false);
-        setLogin(false);
         setUser({});
-        setUserData([]);
     }
     const handleAddTodo=(text,duedate,priority)=>{
         console.log(text,duedate);
@@ -138,7 +131,7 @@ const TodoProvider=function({children}){
       };
       
     return(
-        <TodoContext.Provider value={{todo,authenticated,user,message,login,handleAddTodo,handleDeleteTodo,handleLogin,handleLogout,handleSignup,handleToggleTodo}}>
+        <TodoContext.Provider value={{todo,authenticated,user,message,handleAddTodo,handleDeleteTodo,handleLogin,handleLogout,handleSignup,handleToggleTodo}}>
             {children}
         </TodoContext.Provider>
     )

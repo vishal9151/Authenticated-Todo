@@ -10,6 +10,7 @@ function Home() {
   const user = userData.find((user) => user.username === token.username);
   const todo = user.todo;
   console.log(todo);
+  console.log("inside home component");
 
   const { handleLogout } = useTodo();
 

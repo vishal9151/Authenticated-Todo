@@ -26,12 +26,14 @@ function SignUp() {
       <h2 className="text-2xl font-bold text-center">Sign Up</h2>
       <form onSubmit={handleSubmit} className="mt-4">
         <div className="mb-4">
-          <label htmlFor="username" className="block font-medium">Username:</label>
+          <label htmlFor="username" className="block font-medium">Email:</label>
           <input
-            type="text"
+            type="email"
             id="username"
             ref={usernameRef}
+            required
             className="w-full p-2 border rounded"
+            placeholder="Enter Email Address"
           />
         </div>
         <div className="mb-4">
@@ -40,6 +42,8 @@ function SignUp() {
             type="password"
             id="password"
             ref={passwordRef}
+            required
+            minLength={8}
             className="w-full p-2 border rounded"
           />
         </div>
